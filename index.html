@@ -284,10 +284,13 @@
             transform: scale(1.1);
         }
         .gallery-item iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
             height: 100%;
+            border: none;
             border-radius: 20px;
-            object-fit: cover;
         }
 
 
@@ -560,12 +563,12 @@
             <div class="gallery-item" onclick="openModal(5)">
                 <img src="imagenes/7.jpg" alt="Educación Física">
             </div>
-            <div class="gallery-item">
-                <iframe loading="lazy" 
-                style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" 
+            <div class="gallery-item" style="position: relative; padding-top: 75%; overflow: hidden;">
+              <iframe 
                 src="https://www.canva.com/design/DAG3Bpa7Hhs/AOvKP2a17Y3DTMjb9Bh6Vw/watch?embed" 
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" 
                 allowfullscreen>
-                </iframe>
+              </iframe>
             </div>
 
         </div>
